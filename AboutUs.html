@@ -14,7 +14,7 @@
         nav {
             background-color: #e6ceee;
             color: black;
-            padding: 10px 20px;
+            padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -24,10 +24,15 @@
             text-decoration: none;
             margin: 0 10px;
             font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        nav a:hover, nav a.active {
+            background-color: black;
+            color: #e6ceee;
+            text-decoration: none; /* Overrides default */
+         }
         .container {
             text-align: center;
             padding: 50px;
@@ -55,7 +60,7 @@
         <div class="logo">Muling Pagkikita</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="AboutUs.html">About</a>
+            <a href="AboutUs.html" class="active">About</a>
             <a href="Contact.html">Contact</a>
         </div>
     </nav>
