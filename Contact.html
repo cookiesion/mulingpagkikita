@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Black */
+            color: #f4f4f4; /* Light gray */
+        }
+        nav {
+            background-color: #e6ceee;
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff; /* White */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #e6ceee; /* Purple */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333; /* Dark gray for better contrast */
+        }
+        input, textarea, button {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input, textarea {
+            background-color: #f4f4f4; /* Light gray */
+            color: #333; /* Dark gray */
+        }
+        button {
+            background-color: #e6ceee; /* Purple */
+            color: #1a1a1a; /* Black */
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #d4b8dd; /* Slightly darker purple */
+        }
+        footer {
+            background-color: #e6ceee;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Muling Pagkikita</div>
+        <div class="nav-links">
+            <a href="MPSWeb.html">Home</a>
+            <a href="AboutUs.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="number">Contact Number</label>
+            <input type="number" min="0" id="number" name="number" placeholder="Your contact number" required>            
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 MulingPagkikita.com
+    </footer>
+</body>
+</html>
