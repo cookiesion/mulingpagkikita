@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funeral Service Info Form</title>
+</head>
+<body>
+    <h2>Personal and Contact Information</h2>
+    <form method="POST">
+        <label>First Name:</label><br>
+        <input type="text" name="first_name" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="last_name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="text" name="phone" required><br><br>
+
+        <label>Address:</label><br>
+        <input type="text" name="address" required><br><br>
+
+        <h2>Details of Deceased</h2>
+
+        <label>Name of Deceased:</label><br>
+        <input type="text" name="name_of_deceased" required><br><br>
+
+        <label>Place of Deceased at Time of Death:</label><br>
+        <input type="text" name="place_of_death" required><br><br>
+
+        <label>St. Peter Plan:</label><br>
+        <select name="st_peter_plan" required>
+            <option value="" disabled selected>Select Plan</option>
+            <option value="Basic">Basic</option>
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Not Available">Not Available</option>
+        </select><br><br>
+
+        <label>Memorial Lot or Columbarium:</label><br>
+        <select name="memorial_option" required>
+            <option value="" disabled selected>Select Option</option>
+            <option value="Memorial Lot">Memorial Lot</option>
+            <option value="Columbarium">Columbarium</option>
+            <option value="Other">Other (specify below)</option>
+            <option value="Not Available">Not Available</option>
+        </select><br><br>
+
+        <label>If Other, please specify:</label><br>
+        <input type="text" name="memorial_other" required><br><br>
+
+        <h2>Add-ons (Check at least one)</h2>
+        <label><input type="checkbox" name="add_ons" value="Wake Announcement/Tarpaulin"> Wake Announcement/Tarpaulin</label><br>
+        <label><input type="checkbox" name="add_ons" value="Wake Floral Arrangement"> Wake Floral Arrangement</label><br>
+        <label><input type="checkbox" name="add_ons" value="Wake Catering"> Wake Catering</label><br>
+        <label><input type="checkbox" name="add_ons" value="Wake Padasal"> Wake Padasal</label><br>
+        <label><input type="checkbox" name="add_ons" value="Pa-siyam"> Pa-siyam</label><br>
+        <label><input type="checkbox" name="add_ons" value="40 Days"> 40 Days</label><br>
+        <label><input type="checkbox" name="add_ons" value="Grief Counselor"> Grief Counselor</label><br>
+        <label><input type="checkbox" name="add_ons" value="Spiritual Counselor"> Spiritual Counselor</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
